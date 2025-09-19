@@ -1,4 +1,4 @@
-# 🖥️ Terminal-Style Portfolio — macOS Edition
+# 🖥️ rchesnakov.ru - MacOS terminal style page
 
 > A sleek, interactive portfolio website styled like a macOS terminal. Free for anyone to use, modify, and deploy.
 
