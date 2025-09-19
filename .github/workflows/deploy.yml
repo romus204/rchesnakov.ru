@@ -1,0 +1,25 @@
+name: Deploy via lftp
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload via lftp
+        run: |
+          sudo apt-get update && sudo apt-get install -y lftp
+          lftp -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER -e "
+            cd /public_html/
+            mput index.html script.js style.css
+            quit
+            "
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
