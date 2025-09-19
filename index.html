@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)};
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) {return;} }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=104204726', 'ym');
+
+        ym(104204726, 'init', {ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true});
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/104204726" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body>
+    <div class="mac-window">
+        <div class="window-header">
+            <div class="buttons">
+                <span class="close" id="close-btn"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <div class="window-title">Terminal — Roman Chesnakov</div>
+            <div class="language-switch">
+                <button id="lang-en">EN</button> / <button id="lang-ru">RU</button>
+                <span class="help-trigger" id="help-trigger">?</span>
+            </div>
+        </div>
+        <div class="terminal" id="terminal">
+            <div class="terminal-body" id="output"></div>
+            <div class="terminal-input">
+                <span class="prompt">user@portfolio:~$ </span>
+                <input type="text" id="cmd-input" autofocus autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно справки -->
+    <div class="mac-modal" id="help-modal">
+        <div class="mac-modal-content">
+            <div class="mac-modal-header">
+                <div class="buttons">
+                    <span class="close" id="help-close"></span>
+                    <span class="minimize"></span>
+                    <span class="maximize"></span>
+                </div>
+                <div class="window-title" id="help-title">Quick Guide</div>
+            </div>
+            <div class="mac-modal-body" id="help-text">
+                Type commands like <code>help</code>, <code>about</code>, <code>projects</code> to explore my portfolio.
+                Press <kbd>Enter</kbd> to execute.
+            </div>
+            <!-- <div class="mac-modal-footer"> -->
+            <!--     <button id="help-close-btn">Close</button> -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- Модальное окно резюме — тело теперь генерируется из JS -->
+    <div class="mac-modal" id="resume-modal">
+        <div class="mac-modal-content">
+            <div class="mac-modal-header">
+                <div class="buttons">
+                    <span class="close" id="close-resume-header"></span>
+                    <span class="minimize"></span>
+                    <span class="maximize"></span>
+                </div>
+                <div class="window-title" id="resume-title">Resume</div>
+            </div>
+            <div class="mac-modal-body" id="resume-body">
+                <!-- Контент будет вставлен сюда из JS -->
+            </div>
+            <!-- <div class="mac-modal-footer"> -->
+            <!--     <button id="close-resume">Close</button> -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- Звук закрытия окна -->
+    <audio id="close-sound" src="https://soundbible.com/mp3/Mac%20OS%20X%20System%20Error-SoundBible.com-1417076873.mp3"
+        preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
