@@ -2,6 +2,7 @@
 
 > A sleek, interactive portfolio website styled like a macOS terminal. Free for anyone to use, modify, and deploy.
 
+<img width="986" height="726" alt="image" src="https://github.com/user-attachments/assets/c8aab287-72d1-499b-98e3-e595adf405c4" />
 
 ---
 
