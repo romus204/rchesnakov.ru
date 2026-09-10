@@ -16,7 +16,14 @@ jobs:
           sudo apt-get update && sudo apt-get install -y lftp
           lftp -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER -e "
             cd /public_html/
-            mput index.html script.js style.css
+            mkdir -p css
+            mkdir -p js
+            put index.html
+            put -O css css/style.css
+            put -O js js/i18n.js
+            put -O js js/app.js
+            rm -f script.js
+            rm -f style.css
             quit
             "
         env:

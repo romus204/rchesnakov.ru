@@ -29,7 +29,23 @@
 
 1. Clone or download this repo.
 2. Open `index.html` in your browser — that’s it!
-3. Want to customize it? Edit `script.js` — your bio, skills, and contact info are all in one place.
+3. Want to customize it? Edit `js/i18n.js` — your bio, skills, and contact info are all in one place.
+
+---
+
+## 📂 Project Structure
+
+```
+.
+├── index.html          # Markup + Yandex.Metrika snippet
+├── css/
+│   └── style.css       # All styles
+├── js/
+│   ├── i18n.js          # Text content (EN/RU): commands, help, resume
+│   └── app.js            # Terminal logic, modals, event wiring
+└── .github/workflows/
+    └── deploy.yml       # Deploys to production via FTP on push to master
+```
 
 ---
 
