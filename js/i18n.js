@@ -2,11 +2,11 @@
 const helpTexts = {
     en: {
         title: "Quick Guide",
-        body: `Type commands like:\n→ <code>help</code> — show all commands\n→ <code>about</code> — about me\n→ <code>skills</code> — technologies I use\n→ <code>contact</code> — how to reach me\n→ <code>watch_all</code> — show everything\n\nPress <kbd>Enter</kbd> to run a command.\n\nClick <span style="color:#ff5f57">●</span> to view my full resume.`
+        body: `Type commands like:\n→ <code>help</code> — show all commands\n→ <code>about</code> — about me\n→ <code>skills</code> — technologies I use\n→ <code>contact</code> — how to reach me\n→ <code>watch_all</code> — show everything\n→ <code>matrix</code> — activate matrix rain\n\nPress <kbd>Enter</kbd> to run a command. Use <kbd>↑</kbd>/<kbd>↓</kbd> for history and <kbd>Tab</kbd> to autocomplete.\n\nClick <span style="color:#ff5f57">●</span> to view my full resume.`
     },
     ru: {
         title: "Cправка",
-        body: `Введите команды:\n→ <code>help</code> — список команд\n→ <code>about</code> — обо мне\n→ <code>skills</code> — навыки\n→ <code>contact</code> — контакты\n→ <code>watch_all</code> — всё сразу\n\nНажмите <kbd>Enter</kbd> для выполнения.\n\nНажмите <span style="color:#ff5f57">●</span> для просмотра цельного резюме.`
+        body: `Введите команды:\n→ <code>help</code> — список команд\n→ <code>about</code> — обо мне\n→ <code>skills</code> — навыки\n→ <code>contact</code> — контакты\n→ <code>watch_all</code> — всё сразу\n→ <code>matrix</code> — эффект «матрицы»\n\nНажмите <kbd>Enter</kbd> для выполнения. <kbd>↑</kbd>/<kbd>↓</kbd> — история команд, <kbd>Tab</kbd> — автодополнение.\n\nНажмите <span style="color:#ff5f57">●</span> для просмотра цельного резюме.`
     }
 };
 
@@ -14,20 +14,22 @@ const helpTexts = {
 const texts = {
     en: {
         welcome: "Welcome!\nType 'help' to see available commands or close this window for get resume.",
-        help: "Available commands:\n  help — show this help\n  watch_all — display full portfolio\n  about — about me\n  skills — my skills\n  contact — how to reach me",
+        help: "Available commands:\n  help — show this help\n  watch_all — display full portfolio\n  about — about me\n  skills — my skills\n  contact — how to reach me\n  matrix — activate the matrix",
         watch_all: "— About Me —\nHi! I'm Roman Chesnakov, a backend engineer.\n\n— Skills —\nGo, Lua, Python, Bash, JS, PostgreSQL, ClickHouse, Redis, NATS, RabbitMQ, Docker, Kubernetes\n\n— Interests —\nNeovim, Cybersecurity, Microcontrollers, AI, Self-hosted infra\n\n— Contact —\n📧 romus204@gmail.com\n📱 t.me/just_romarik\n💼 linkedin.com/in/just-romarik\n🐙 github.com/romus204",
         about: "Backend engineer. I love building fast, reliable, and understandable systems. Interested in high-load tasks, integrations, and optimization. Skilled in creating fault-tolerant and scalable solutions. Deep infrastructure knowledge helps me see the big picture — not just the code. Constantly apply security practices from pentesting my own network and participating in related events.",
         skills: "Languages: Go, Lua, Python, Bash, JavaScript\nDatabases: PostgreSQL, ClickHouse, Redis\nBrokers: NATS, RabbitMQ\nInfra: Docker, Kubernetes\nTools: Neovim, Git, Make, CI/CD",
         contact: "📬 Email: romus204@gmail.com\n📱 Telegram: @just_romarik\n💼 LinkedIn: linkedin.com/in/just-romarik\n🐙 GitHub: github.com/romus204",
+        matrix: "Wake up, Neo...",
         command_not_found: "Command not found. Type 'help' for assistance."
     },
     ru: {
         welcome: "Добро пожаловать!\nВведите 'help' для списка команд, или закройте это окно для перехода к резюме.",
-        help: "Доступные команды:\n  help — показать эту справку\n  watch_all — показать всё портфолио\n  about — обо мне\n  skills — мои навыки\n  contact — как со мной связаться",
+        help: "Доступные команды:\n  help — показать эту справку\n  watch_all — показать всё портфолио\n  about — обо мне\n  skills — мои навыки\n  contact — как со мной связаться\n  matrix — войти в матрицу",
         watch_all: "— Обо мне —\nПривет! Я Роман Чеснаков, backend-инженер.\n\n— Навыки —\nGo, Lua, Python, Bash, JS, PostgreSQL, ClickHouse, Redis, NATS, RabbitMQ, Docker, Kubernetes\n\n— Интересы —\nNeovim, Кибербезопасность, Микроконтроллеры, ИИ, Self-hosted\n\n— Контакты —\n📧 romus204@gmail.com\n📱 t.me/just_romarik\n💼 linkedin.com/in/just-romarik\n🐙 github.com/romus204",
         about: "Backend-инженер. Люблю делать быстрые, надёжные и понятные системы. Мне интересны задачи с высокими нагрузками, интеграциями и оптимизацией. Умею строить отказоустойчивые и масштабируемые решения. Хорошо понимаю работу инфраструктуры — это помогает смотреть на систему целиком, а не только на код. Постоянно применяю знания в области безопасности, полученные в ходе пентестов собственной сети и участия в соответствующих мероприятиях.",
         skills: "Языки: Go, Lua, Python, Bash, JavaScript\nБазы данных: PostgreSQL, ClickHouse, Redis\nБрокеры: NATS, RabbitMQ\nИнфраструктура: Docker, Kubernetes\nИнструменты: Neovim, Git, Make, CI/CD",
         contact: "📬 Email: romus204@gmail.com\n📱 Telegram: @just_romarik\n💼 LinkedIn: linkedin.com/in/just-romarik\n🐙 GitHub: github.com/romus204",
+        matrix: "Проснись, Нео...",
         command_not_found: "Команда не найдена. Введите 'help' для помощи."
     }
 };
